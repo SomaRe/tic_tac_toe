@@ -19,6 +19,91 @@ td{
     border-color: black;
 }
 
+#hl1{
+    display: none;
+    width: 250px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 40%;
+    top: 32%;
+}
+
+#hl2{
+    display: none;
+    width: 250px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 40%;
+    top: 48%;
+}
+
+#hl3{
+    display: none;
+    width: 250px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 40%;
+    top: 62%;
+}
+
+#vl1{
+    display:none ;
+    background-color: red;
+    width: 3px;
+    height: 250px;
+    position: absolute;
+    left: 42%;
+    top: 28%;
+}
+
+#vl2{
+    display:none ;
+    background-color: red;
+    width: 3px;
+    height: 250px;
+    position: absolute;
+    left: 50%;
+    top: 28%;
+}
+
+#vl3{
+    display:none ;
+    background-color: red;
+    width: 3px;
+    height: 250px;
+    position: absolute;
+    left: 58%;
+    top: 28%;
+    
+}
+
+#dl1{
+    display:none;  
+    background-color: red;
+    width: 3px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 24%;
+    transform: rotate(-45deg);
+}
+
+
+#dl2{
+    display: none;
+    background-color: red;
+    width: 3px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 24%;
+    transform: rotate(45deg);
+}
+
+
 .top-left{
     border-width: 0px 2px  2px 0px;
 }
