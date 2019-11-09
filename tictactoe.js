@@ -34,8 +34,9 @@ $(document).ready(function(){
     if($(".cell1").text() === $(".cell2").text() && $(".cell2").text()===$(".cell3").text()){
         winner = $(".cell1").text();
     } 
-    else if($(".cell3").text() === $(".cell4").text() && $(".cell4").text()===$(".cell5").text()){
-        winner = $(".cell3").text();
+    else if($(".cell4").text() === $(".cell5").text() && $(".cell5").text()===$(".cell6").text()){
+        winner = $(".cell4").text();
+        
     } 
     else if($(".cell7").text() === $(".cell8").text() && $(".cell8").text()===$(".cell9").text()){
         winner = $(".cell7").text();
