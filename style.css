@@ -26,7 +26,7 @@ td{
     background-color: red;
     position: relative;
     margin: auto;
-    top: 50px;
+    top: 53px;
 
 }
    
@@ -38,7 +38,7 @@ td{
     background-color: red;
     position: relative;
     margin: auto;
-    top: 150px;
+    top: 154px;
     
 }
 
@@ -49,7 +49,7 @@ td{
     background-color: red;
     position: relative;
     margin: auto;
-    top: 250px;
+    top: 256px;
 }
 
 #vl1{
@@ -112,6 +112,25 @@ td{
     top:150px;
 }
 
+@media only screen and (max-width: 600px){
+    #hl1{
+  
+    top: 48px;
+
+}
+   
+
+#hl2{
+   
+    top: 148px;
+    
+}
+
+#hl3{
+   
+    top: 248px;
+}
+}
 
 .top-left{
     border-width: 0px 2px  2px 0px;
