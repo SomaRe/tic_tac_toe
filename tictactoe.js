@@ -6,7 +6,7 @@ $(document).ready(function(){
        for(var i=0;i<9;i++){
            cells[i].textContent='';
            $(cells[i]).css("background-color","white");
-           $("#hl1").css("display","none");
+       $("#hl1").css("display","none");
        $("#hl2").css("display","none");
        $("#hl3").css("display","none");
        $("#vl1").css("display","none");

@@ -24,83 +24,92 @@ td{
     width: 250px;
     height: 3px;
     background-color: red;
-    position: absolute;
-    left: 40%;
-    top: 32%;
+    position: relative;
+    margin: auto;
+    top: 55px;
+
 }
+   
 
 #hl2{
-    display: none;
+    display:none;
     width: 250px;
     height: 3px;
     background-color: red;
-    position: absolute;
-    left: 40%;
-    top: 48%;
+    position: relative;
+    margin: auto;
+    top: 155px;
+    
 }
 
 #hl3{
-    display: none;
+    display:none;
     width: 250px;
     height: 3px;
     background-color: red;
-    position: absolute;
-    left: 40%;
-    top: 62%;
+    position: relative;
+    margin: auto;
+    top: 255px;
 }
 
 #vl1{
-    display:none ;
+    display:none;
     background-color: red;
-    width: 3px;
-    height: 250px;
-    position: absolute;
-    left: 42%;
-    top: 28%;
+    width: 250px;
+    height: 3px;
+    position: relative;
+    left: -100px;
+    top:150px;
+    margin: auto;
+    transform: rotate(90deg);
+    
 }
 
 #vl2{
-    display:none ;
+    display:none;
     background-color: red;
-    width: 3px;
-    height: 250px;
-    position: absolute;
-    left: 50%;
-    top: 28%;
+    width: 250px;
+    height: 3px;
+    position: relative;
+    top:150px;
+    margin: auto;
+    transform: rotate(90deg);
 }
 
 #vl3{
-    display:none ;
+    display:none;
     background-color: red;
-    width: 3px;
-    height: 250px;
-    position: absolute;
-    left: 58%;
-    top: 28%;
-    
+    width: 250px;
+    height: 3px;
+    position: relative;
+    left: 100px;
+    top:150px;
+    margin: auto;
+    transform: rotate(90deg);
 }
 
 #dl1{
     display:none;  
     background-color: red;
-    width: 3px;
-    height: 300px;
-    position: absolute;
-    left: 50%;
-    top: 24%;
-    transform: rotate(-45deg);
+    width: 300px;
+    height: 3px;
+    position: relative;
+    margin: auto;
+   transform: rotate(45deg);
+    top:150px;
+    
 }
 
 
 #dl2{
-    display: none;
+   display:none;  
     background-color: red;
-    width: 3px;
-    height: 300px;
-    position: absolute;
-    left: 50%;
-    top: 24%;
-    transform: rotate(45deg);
+    width: 300px;
+    height: 3px;
+    position: relative;
+    margin: auto;
+   transform: rotate(-45deg);
+    top:150px;
 }
 
 
