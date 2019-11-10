@@ -2,13 +2,12 @@
     padding: 20px;
     text-align: center;
 }
+
 table{
     user-select: none;
     box-shadow: 5px 10px 10px #888888; 
     margin: auto;
-   
 }
-
 
 td{
     height: 100px;
@@ -17,15 +16,6 @@ td{
     font-size: 50px;
     border-style: solid;
     border-color: black;
-}
-
-.cell{
-    height: 80px;
-    width: 80px;
-    background-color: white;
-    text-align: center;
-    font-size: 50px;
-    border: none;
 }
 
 #hl1{
@@ -38,7 +28,6 @@ td{
     top: 53px;
 
 }
-   
 
 #hl2{
     display:none;
@@ -48,7 +37,6 @@ td{
     position: relative;
     margin: auto;
     top: 154px;
-    
 }
 
 #hl3{
@@ -71,7 +59,6 @@ td{
     top:150px;
     margin: auto;
     transform: rotate(90deg);
-    
 }
 
 #vl2{
@@ -104,41 +91,20 @@ td{
     height: 3px;
     position: relative;
     margin: auto;
-   transform: rotate(45deg);
-    top:150px;
-    
+    transform: rotate(45deg);
+    top:150px;   
 }
 
 
 #dl2{
-   display:none;  
+    display:none;  
     background-color: red;
     width: 300px;
     height: 3px;
     position: relative;
     margin: auto;
-   transform: rotate(-45deg);
+    transform: rotate(-45deg);
     top:150px;
-}
-
-@media only screen and (max-width: 600px){
-    #hl1{
-  
-    top: 49.5px;
-
-}
-   
-
-#hl2{
-   
-    top: 149.5px;
-    
-}
-
-#hl3{
-   
-    top: 249.5px;
-}
 }
 
 .top-left{
@@ -180,10 +146,10 @@ td{
 .div_result{
     border-radius: 15px;
     color: white;
-     margin: auto;
+    margin: auto;
     width: 200px;
     text-align: center;
-     background-color: royalblue;
+    background-color: royalblue;
 }
 
 .result{
@@ -193,6 +159,18 @@ td{
     width: 100px;
     font-size: 60px;
     color: white;
+}
+
+@media only screen and (max-width: 600px){
+    #hl1{
+    top: 49.5px;
+    }
+    #hl2{
+        top: 149.5px;
+    }
+    #hl3{
+        top: 249.5px;
+    }
 }
 
 footer{
