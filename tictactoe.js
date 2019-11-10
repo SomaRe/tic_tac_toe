@@ -2,7 +2,8 @@
 $(document).ready(function(){
     
    $(".reset").click(function(){
-      var cells=document.querySelectorAll("td");
+       location.reload(true);
+      /*var cells=document.querySelectorAll("td");
        for(var i=0;i<9;i++){
            cells[i].textContent='';
        
@@ -15,17 +16,21 @@ $(document).ready(function(){
        $("#dl1").css("display","none");
        $("#dl2").css("display","none");
        }
-       $(".cell").prop("disabled",false);
+       $(".cell").each(function(){
+            $(this).prop("disabled",false);
+    });
        $('.result').text("nil");
-       last="";
+       last="";*/
        
    });
     
     var last='';
     
     function clickdisable(){
-        $('.cell').prop("disabled",true);
-    }
+            $("td").off('click');
+            //$("#test").text($("td").prop("disabled", true));
+            
+                        }
     
     $("td").click(function(){
         
