@@ -5,7 +5,7 @@ $(document).ready(function(){
       var cells=document.querySelectorAll("td");
        for(var i=0;i<9;i++){
            cells[i].textContent='';
-           $(cells[i]).css("background-color","white");
+        $(cells[i]).prop("disabled",true);
        $("#hl1").css("display","none");
        $("#hl2").css("display","none");
        $("#hl3").css("display","none");
@@ -15,12 +15,19 @@ $(document).ready(function(){
        $("#dl1").css("display","none");
        $("#dl2").css("display","none");
        }
-       
+       $('.result').text("nil");
        last="";
        
    });
     
     var last='';
+    
+    function clickdisable(){
+        var cells=document.querySelectorAll("td");
+       for(var i=0;i<9;i++){
+           $(cells[i]).prop("disabled",false);
+       }
+    }
     
     $("td").click(function(){
          if(this.textContent==='' && last===''){
@@ -45,64 +52,46 @@ $(document).ready(function(){
     if($(".cell1").text() === $(".cell2").text() && $(".cell2").text()===$(".cell3").text() && $(".cell1").text()!=""){
         winner = $(".cell1").text();
         $("#hl1").css("display","block");
-        //$(".cell1").css("background-color","seagreen");
-        //$(".cell2").css("background-color","seagreen");
-        //$(".cell3").css("background-color","seagreen");
+        clickdisable();
     } 
     else if($(".cell4").text() === $(".cell5").text() && $(".cell5").text()===$(".cell6").text() && $(".cell4").text()!=""){
         winner = $(".cell4").text();
         $("#hl2").css("display","block");
-        //$(".cell4").css("background-color","seagreen");
-        //$(".cell5").css("background-color","seagreen");
-        //$(".cell6").css("background-color","seagreen");
+        clickdisable();
     } 
     else if($(".cell7").text() === $(".cell8").text() && $(".cell8").text()===$(".cell9").text() && $(".cell7").text()!=""){
         winner = $(".cell7").text();
         $("#hl3").css("display","block");
-        //$(".cell7").css("background-color","seagreen");
-        //$(".cell8").css("background-color","seagreen");
-        //$(".cell9").css("background-color","seagreen");
+        clickdisable();
     } 
         //columns
     else if($(".cell1").text() === $(".cell4").text() && $(".cell4").text()===$(".cell7").text() && $(".cell1").text()!=""){
         winner = $(".cell1").text();
         $("#vl1").css("display","block");
-        //$(".cell1").css("background-color","seagreen");
-        //$(".cell4").css("background-color","seagreen");
-        //$(".cell7").css("background-color","seagreen");
+        clickdisable();
     } 
     else if($(".cell2").text() === $(".cell5").text() && $(".cell5").text()===$(".cell8").text() && $(".cell2").text()!=""){
         winner = $(".cell2").text();
         $("#vl2").css("display","block");
-        //$(".cell2").css("background-color","seagreen");
-        //$(".cell5").css("background-color","seagreen");
-        //$(".cell8").css("background-color","seagreen");
+      clickdisable();
     } 
     else if($(".cell3").text() === $(".cell6").text() && $(".cell6").text()===$(".cell9").text() && $(".cell3").text()!=""){
             winner = $(".cell3").text();
         $("#vl3").css("display","block");
-        //$(".cell3").css("background-color","seagreen");
-        //$(".cell6").css("background-color","seagreen");
-        //$(".cell9").css("background-color","seagreen");
+      clickdisable();
             }
         //diagonal
      else if($(".cell1").text() === $(".cell5").text() && $(".cell5").text()===$(".cell9").text() && $(".cell1").text()!=""){
             winner = $(".cell1").text();
             $("#dl1").css("display","block");
-            //$(".cell1").css("background-color","seagreen");
-            //$(".cell5").css("background-color","seagreen");
-            //$(".cell9").css("background-color","seagreen");
+            clickdisable();
             }
      else if($(".cell3").text() === $(".cell5").text() && $(".cell5").text()===$(".cell7").text() && $(".cell3").text()!="" ){
             winner = $(".cell3").text();
             $("#dl2").css("display","block");
-            //$(".cell3").css("background-color","seagreen");
-            //$(".cell5").css("background-color","seagreen");
-            //$(".cell7").css("background-color","seagreen");
+           clickdisable();
             }    
-    //else{
-   //     winner='nil';
-    //}
+   
          $(".result").text(winner); 
         
     
