@@ -19,6 +19,15 @@ td{
     border-color: black;
 }
 
+.cell{
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    text-align: center;
+    font-size: 50px;
+    border: none;
+}
+
 #hl1{
     display: none;
     width: 250px;

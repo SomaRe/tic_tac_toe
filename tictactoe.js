@@ -5,7 +5,7 @@ $(document).ready(function(){
       var cells=document.querySelectorAll("td");
        for(var i=0;i<9;i++){
            cells[i].textContent='';
-        $(cells[i]).prop("disabled",true);
+       
        $("#hl1").css("display","none");
        $("#hl2").css("display","none");
        $("#hl3").css("display","none");
@@ -15,6 +15,7 @@ $(document).ready(function(){
        $("#dl1").css("display","none");
        $("#dl2").css("display","none");
        }
+       $(".cell").prop("disabled",false);
        $('.result').text("nil");
        last="";
        
@@ -23,13 +24,11 @@ $(document).ready(function(){
     var last='';
     
     function clickdisable(){
-        var cells=document.querySelectorAll("td");
-       for(var i=0;i<9;i++){
-           $(cells[i]).prop("disabled",false);
-       }
+        $('.cell').prop("disabled",true);
     }
     
     $("td").click(function(){
+        
          if(this.textContent==='' && last===''){
              this.textContent="X";
              last='X';
