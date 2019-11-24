@@ -12,9 +12,10 @@ $(document).ready(function(){
             $("td").off('click');
             }
     
-    $(".2player").click(function(){ 
+    $(".2player").click(function(){
         $(this).attr('disabled',true);
         $('.1player').css('display','none');
+        $("td").css("opacity",1);
         
     $("td").click(function(){
          if(this.textContent==='' && last==='')
@@ -98,24 +99,26 @@ $(document).ready(function(){
         
         var alltd = document.querySelectorAll("td");
         var numarr= [0,1,2,3,4,5,6,7,8];
-        
+         
         function ai(){
              for(var i=0;i<numarr.length;i++){
-                if($(alltd[i]).textContent==='X'){
-                     alert(i);
+                if($(alltd[numarr[i]]).text()==='X'){
                     numarr.splice(i,1);
+                    //$(".test").append("<p>X: "+numarr+"<p>");
                 }
             }
             var num = Math.floor(Math.random()*(numarr.length));
-            $(alltd[numarr[num]]).text("O");
+            $(alltd[numarr[num]]).text("O").animate({opacity: 1},1000);
             numarr.splice(num,1);
-            //alert(numarr);
-                }
-        
+            //$(".test").append("<p>O: "+numarr+"<p>");
+        }
+                
+
          $("td").click(function(){
          if(this.textContent==='')
          {
              this.textContent="X";
+             this.style.opacity="1";
              ai();
         }
        
