@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+    <link rel="stylesheet" href="style.css">
+
+    <title>tic tac toe</title>
+  </head>
+  <body>
+      
+    <div class="jumbotron">
+      <h2>Tic Tac Toe</h2>
+        <button type="button" class="btn btn-secondary 1player">Player vs Comp.</button>
+        <button type="button" class="btn btn-secondary 2player">Player vs Player</button>
+        <br>
+        <button type="button" class="btn btn-primary reset">RESET</button>
+    </div>
+      
+      <div class='instructions'>player goes first with <span id='xinst'>'X'</span></div>
+     <div class="test"></div>
+
+       <p id="hl1"></p>
+       <p id="hl2"></p>
+       <p id="hl3"></p>
+       <p id="vl1"></p>
+       <p id="vl2"></p>
+       <p id="vl3"></p>
+       <p id="dl1"></p>
+       <p id="dl2"></p>
+      
+  <table>
+  <tbody>
+       
+    <tr>
+      <td class="cell cell1 top-left"></td>
+      <td class="cell cell2 top-middle"></td>
+      <td class="cell cell3 top-right"></td>
+    </tr>
+    <tr>
+      <td class="cell cell4 middle-left"></td>
+      <td class="cell cell5 middle-middle"></td>
+      <td class="cell cell6 middle-right"></td>
+    </tr>
+    <tr>
+      <td class="cell cell7 bottom-left"></td>
+      <td class="cell cell8 bottom-middle"></td>
+      <td class="cell cell9 bottom-right"></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<div class="div_result">Winner is:<p class="result">nil</p></div>
+      
+      
+      <p id="test"></p>
+      <footer>
+        made for fun with <span>&#10084;</span> by Soma
+      </footer>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="tictactoe.js"></script>
+  </body>
+</html>
