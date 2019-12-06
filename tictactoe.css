@@ -1,3 +1,14 @@
+ @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
+.back{
+    background-color: lightgrey;
+    color: black;
+    padding: 10px;
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
 .reset{
     margin-top: 5px;
 }
@@ -37,7 +48,6 @@
 
 table{
     user-select: none;
-    box-shadow: 5px 10px 10px #888888; 
     margin: auto;
 }
 
